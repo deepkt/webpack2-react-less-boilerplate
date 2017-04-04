@@ -1,4 +1,4 @@
-# Webpack2 with React Boilerplate with Less, ESLint and HMR
+# Webpack2 - React Boilerplate with Less, ESLint and HMR
 
 ### Installation
 

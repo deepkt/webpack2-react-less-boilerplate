@@ -1,7 +1,7 @@
 {
-  "name": "webpack-boilerplate",
+  "name": "webpack2-react-less-boilerplate",
   "version": "1.0.0",
-  "description": "Webpack 2.0 Boilerplate for UI training",
+  "description": "Webpack2 - React Boilerplate with Less, ESLint and HMR",
   "main": "index.js",
   "scripts": {
     "start-dashboard": "webpack-dashboard -t 'Compass Webpack Training' -- webpack-dev-server --colors --no-info",
@@ -21,9 +21,6 @@
     "eslint",
     "babel-loader"
   ],
-  "bugs": {
-    "url": "https://github.com/Stanko/react-redux-webpack2-boilerplate/issues"
-  },
   "homepage": "https://github.com/deepkt/webpack2-react-less-boilerplate#readme",
   "devDependencies": {
     "babel-core": "^6.24.0",
