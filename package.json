@@ -8,7 +8,23 @@
     "start": "webpack-dev-server --progress --inline"
   },
   "author": "Pradeep Thoma",
-  "license": "ISC",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/deepkt/webpack2-react-less-boilerplate"
+  },
+  "keywords": [
+    "react",
+    "webpack2",
+    "boilerplate",
+    "less",
+    "eslint",
+    "babel-loader"
+  ],
+  "bugs": {
+    "url": "https://github.com/Stanko/react-redux-webpack2-boilerplate/issues"
+  },
+  "homepage": "https://github.com/deepkt/webpack2-react-less-boilerplate#readme",
   "devDependencies": {
     "babel-core": "^6.24.0",
     "babel-loader": "^6.4.0",
