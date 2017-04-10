@@ -1,0 +1,18 @@
+body {
+    background-color: #f3f3f3;
+}
+nav{
+  &.nav-brand{
+    background-color: #25aaa0;
+    color: #fff;
+  }
+  .logo-text{
+    font-weight: bold;
+  }
+  a.nav-item{
+    color: #fff;
+    &:hover{
+      color: #ffe500;
+    }
+  }
+}

@@ -11,6 +11,10 @@ const sourcePath = path.join(__dirname, './src');
 const buildPath = path.join(__dirname, './dist');
 const assetPath = path.join('./assets');
 
+if (isProduction) {
+} else {
+
+}
 module.exports = {
 	context: path.resolve(__dirname, './src'),
 	entry: {
@@ -23,7 +27,7 @@ module.exports = {
 	},
 
 	resolve: {
-		extensions: ['.js', '.jsx', '.scss']
+		extensions: ['.js', '.jsx', '.scss', '.sass']
 	},
 
 	module: {
@@ -42,8 +46,8 @@ module.exports = {
         loader: "eslint-loader",
       },
       {
-        test: /\.less$/i,
-        use: ExtractTextPlugin.extract([ 'css-loader', 'less-loader' ])
+        test: /\.(scss|sass)$/i,
+        use: ExtractTextPlugin.extract([ 'css-loader', 'sass-loader' ])
       },
 		]
 	},
@@ -57,34 +61,11 @@ module.exports = {
 	    filename: 'index.html',
 	  }),
 		// new webpack.optimize.UglifyJsPlugin({
-    //   sourceMap: options.devtool && (options.devtool.indexOf("sourcemap") >= 0 || options.devtool.indexOf("source-map") >= 0)
+    //   sourceMap: isProduction ? 0:1
     // })
 	],
 
 	devServer: {
 		contentBase: path.resolve(__dirname, './dist')
 	}
-	// devServer: {
-  //   contentBase:'./src',
-  //   historyApiFallback: true,
-  //   port: 8080,
-  //   compress: true,
-  //   inline: false,
-  //   hot: true,
-  //   host: 'localhost',
-  //   stats: {
-  //     assets: true,
-  //     children: false,
-  //     chunks: false,
-  //     hash: false,
-  //     modules: false,
-  //     publicPath: false,
-  //     timings: true,
-  //     version: false,
-  //     warnings: true,
-  //     colors: {
-  //       green: '\u001b[32m',
-  //     },
-  //   },
-  // },
 };
